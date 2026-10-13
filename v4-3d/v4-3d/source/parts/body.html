@@ -1,0 +1,370 @@
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Loader: the drawing set "plots" while the page loads -->
+<div class="boot" aria-hidden="true">
+  <canvas class="boot__gl" id="bootGL"></canvas>
+  <div class="boot__top mono"><span>Infinity Hub Contracting LLC</span><span>Fabricating the mark</span></div>
+  <div class="boot__mid">
+    <ol class="boot__log">
+      <li><span>001</span><span>Reading requirement</span><span class="ok">OK</span></li>
+      <li><span>002</span><span>Site survey &amp; assessment</span><span class="ok">OK</span></li>
+      <li><span>003</span><span>Setting out grid A–G</span><span class="ok">OK</span></li>
+      <li><span>004</span><span>Civil works</span><span class="ok">OK</span></li>
+      <li><span>005</span><span>Structural steel</span><span class="ok">OK</span></li>
+      <li><span>006</span><span>Sandwich panels</span><span class="ok">OK</span></li>
+      <li><span>007</span><span>Parking shades</span><span class="ok">OK</span></li>
+      <li><span>008</span><span>Interior fit-out</span><span class="ok">OK</span></li>
+      <li><span>009</span><span>Inspection</span><span class="ok">OK</span></li>
+      <li><span>010</span><span>Handover</span><span class="ok">OK</span></li>
+    </ol>
+    <div class="boot__pct"><span id="bootPct">0</span><small style="font-size:.3em;letter-spacing:0">%</small></div>
+  </div>
+  <div class="boot__bot mono"><span id="bootXY">X 0000 · Y 0000</span><span>Tap to skip</span></div>
+  <div class="boot__bar"><i id="bootBar"></i></div>
+</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap bar">
+    <a class="bar__logo" href="#top" aria-label="Infinity Hub Contracting LLC, back to top"><img class="m" src="assets/brand/mark-rev.svg" alt="" width="56" height="24"><img class="w" src="assets/brand/word-rev.svg" alt="Infinity Hub Contracting LLC" width="129" height="25"><img class="w w--ink" src="assets/brand/word-ink.svg" alt="" width="129" height="25"></a>
+    <nav class="bar__nav" aria-label="Main">
+      <a href="#about" data-sec="about"><i>B</i>About</a>
+      <a href="#capabilities" data-sec="capabilities"><i>C</i>Capabilities</a>
+      <a href="#process" data-sec="process"><i>D</i>Process</a>
+      <a href="#projects" data-sec="projects"><i>E</i>Our work</a>
+      <a href="#why" data-sec="why"><i>F</i>Why us</a>
+      <a href="#contact" data-sec="contact"><i>G</i>Contact</a>
+    </nav>
+    <div class="bar__end">
+      <a class="btn btn--sm" href="#contact">Book our services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a>
+      <button class="bar__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span aria-hidden="true"><i></i><i></i></span>Menu</button>
+    </div>
+  </div>
+  <i class="prog" id="prog" aria-hidden="true"></i>
+</header>
+
+<div class="menu" id="menu">
+  <nav aria-label="Menu">
+    <a href="#about"><i>B</i>About</a>
+    <a href="#capabilities"><i>C</i>Capabilities</a>
+    <a href="#process"><i>D</i>Process</a>
+    <a href="#projects"><i>E</i>Our work</a>
+    <a href="#why"><i>F</i>Why us</a>
+    <a href="#contact"><i>G</i>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <span class="mono">Call or write</span>
+    <a href="tel:+97143449282">+971 4 344 9282</a>
+    <a href="mailto:Info@infinityhubcontracting.com">Info@infinityhubcontracting.com</a>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorTxt">Drag</span></div>
+
+<main id="main">
+
+<!-- A · HERO: one calm 3D building; four steps tell how a project moves -->
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <canvas class="hero__gl" id="heroGL" role="img" aria-label="3D model of a dark two-storey building. The four steps below show it drawn, surveyed, built and lit. Drag to turn it."></canvas>
+  <div class="hero__tags" id="heroTags" aria-hidden="true"></div>
+  <p class="hero__drag mono" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h14M4 5 1 8l3 3M12 5l3 3-3 3"/></svg>Drag to turn</p>
+  <div class="hero__copy">
+    <div class="wrap">
+      <p class="hero__chip"><span class="hero__mk"><img src="assets/brand/mark-rev.svg" alt="" width="28" height="12"></span>Infinity Hub Contracting LLC · Dubai, UAE</p>
+      <h1 class="hero__title" id="heroTitle">Shaping <em>tomorrow's</em><br>landmark.</h1>
+      <p class="hero__lead">Construction, contracting, steel, fit-out and shade solutions across the UAE. One team plans, fabricates and installs the agreed scope.</p>
+      <div class="hero__ctas">
+        <a class="hcta" href="#contact"><span class="hcta__ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span><span>Book our services</span></a>
+        <a class="hlink" href="#capabilities">Explore capabilities</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__foot">
+    <div class="wrap">
+      <div class="hero__steps" role="tablist" aria-label="How a project moves"><button class="hs" type="button" role="tab" aria-selected="true" data-i="0" aria-label="Step 01: Requirement"><span class="hs__card"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h6v2H5zM4 4H3v10h10V4h-1M6 8h4M6 11h3"/></svg><span>Requirement</span></span><span class="hs__bar"><i></i></span><span class="hs__n">01</span></button><button class="hs" type="button" role="tab" aria-selected="false" data-i="1" aria-label="Step 02: Site survey"><span class="hs__card"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13 13 2M4 11l1.5 1.5M6.5 8.5 8 10M9 6l1.5 1.5M11.5 3.5 13 5"/></svg><span>Site survey</span></span><span class="hs__bar"><i></i></span><span class="hs__n">02</span></button><button class="hs" type="button" role="tab" aria-selected="false" data-i="2" aria-label="Step 03: Build"><span class="hs__card"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h12M2 12h12M8 4v8M5 4v1M11 4v1M5 11v1M11 11v1"/></svg><span>Build</span></span><span class="hs__bar"><i></i></span><span class="hs__n">03</span></button><button class="hs" type="button" role="tab" aria-selected="false" data-i="3" aria-label="Step 04: Handover"><span class="hs__card"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8 8 3l6 5M4 7v6h8V7M7 13v-3h2v3"/></svg><span>Handover</span></span><span class="hs__bar"><i></i></span><span class="hs__n">04</span></button></div>
+      <p class="hero__cap" aria-live="polite"><span data-i="0" class="on">We start with what you actually need.</span><span data-i="1">Measurements, access and existing services checked.</span><span data-i="2">Fabricated, delivered and installed by one team.</span><span data-i="3">Inspected, completed and handed over with clarity.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- B · ABOUT -->
+<section class="about paper" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <div class="sheet-head">
+      <p class="bubble mono"><b>B</b>About Infinity Hub</p>
+    </div>
+    <h2 class="about__statement" id="aboutTitle" data-words>Choosing the right contractor is about more than comparing quotations.</h2>
+    <div class="about__grid">
+      <div class="about__body">
+        <p>It is about finding a company that <strong>understands the requirement, communicates clearly, coordinates resources</strong> and <strong>takes responsibility for delivering the agreed scope.</strong></p>
+        <p>Infinity Hub Contracting LLC is built around this approach. We operate from Dubai and focus primarily on UAE projects.</p>
+        <dl class="about__facts">
+          <div><dt class="mono">Based in</dt><dd>Deira, Dubai</dd></div>
+          <div><dt class="mono">Works across</dt><dd>The UAE</dd></div>
+          <div><dt class="mono">Core capabilities</dt><dd>9 disciplines</dd></div>
+          <div><dt class="mono">Project stages</dt><dd>9, enquiry to handover</dd></div>
+        </dl>
+      </div>
+      <div class="stage3d">
+        <figure class="film" id="film">
+          <video muted loop playsinline preload="none" data-auto poster="assets/img/poster-shade.webp" aria-hidden="true"><source src="assets/video/shade.mp4" type="video/mp4"><source src="assets/video/shade.webm" type="video/webm"></video>
+          <figcaption class="film__hud mono"><div><span class="rec">Site</span><span>Shade structure</span></div><div><span>Built for the UAE climate</span><span>Grid C–4</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mv">
+      <article class="flip" id="flipMission">
+        <div class="flip__in">
+          <div class="flip__face flip__front">
+            <div class="flip__title"><h3>Mission</h3><span class="mono muted">01</span></div>
+            <p>To provide reliable, innovative and cost-effective contracting and construction solutions across the UAE.</p>
+            <button type="button" aria-controls="flipMission" aria-expanded="false"><i aria-hidden="true">↻</i><span class="mono">Read the full mission</span></button>
+          </div>
+          <div class="flip__face flip__back">
+            <div class="flip__title"><h3>Mission</h3><span class="mono muted">01</span></div>
+            <p>We are committed to understanding every client's requirements and delivering tailored solutions through quality workmanship, efficient project execution and professional service. From structural steel and civil works to interior fit-outs, shades, sandwich panels and sports facility solutions, we aim to exceed expectations on every project.</p>
+            <button type="button" aria-controls="flipMission"><i aria-hidden="true">↺</i><span class="mono">Back</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="flip" id="flipVision">
+        <div class="flip__in">
+          <div class="flip__face flip__front">
+            <div class="flip__title"><h3>Vision</h3><span class="mono muted">02</span></div>
+            <p>To become a trusted and leading name in the UAE's construction and contracting industry.</p>
+            <button type="button" aria-controls="flipVision" aria-expanded="false"><i aria-hidden="true">↻</i><span class="mono">Read the full vision</span></button>
+          </div>
+          <div class="flip__face flip__back">
+            <div class="flip__title"><h3>Vision</h3><span class="mono muted">02</span></div>
+            <p>Recognised for quality, reliability, innovation and customer satisfaction. We continuously strive to improve our services, adopt modern construction practices, and develop long-term partnerships with our clients and business partners.</p>
+            <button type="button" aria-controls="flipVision"><i aria-hidden="true">↺</i><span class="mono">Back</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- C · CAPABILITIES: one 3D model per discipline -->
+<section class="caps ink" id="capabilities" aria-labelledby="capsTitle">
+  <div class="wrap">
+    <div class="sheet-head">
+      <p class="bubble mono"><b>C</b>Core capabilities</p>
+      <h2 class="h2" id="capsTitle">Multiple capabilities. <span class="soft">One point of coordination.</span></h2>
+    </div>
+    <div class="caps__ui">
+      <div class="caps__tabs" role="tablist" aria-label="Capabilities" id="capTabs"></div>
+      <div class="caps__main">
+      <div class="caps__stage" id="capStage">
+        <canvas id="capGL" aria-hidden="true"></canvas>
+        <div class="caps__hud mono">
+          <div><span class="t" id="capCode">C1 · Civil &amp; interior fit-out</span><span>Drag to rotate</span></div>
+          <div><span id="capScale">Scale 1:50</span><div class="caps__sizes" id="ringSizes" hidden><button type="button" data-size="5" aria-pressed="false">5m×5m</button><button type="button" data-size="6" aria-pressed="true">6m×6m</button><button type="button" data-size="7" aria-pressed="false">7m×7m</button></div></div>
+        </div>
+      </div>
+      <div class="caps__panel" id="capPanel" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+  <div class="industries" aria-labelledby="indTitle">
+    <div class="wrap industries__head mono"><span id="indTitle">Industries we serve</span><span>Hover to pause</span></div>
+    <div class="marquee" id="marquee">
+      <div class="ind"><b>Commercial</b><span>Offices · Retail spaces</span><span>Showrooms &amp; commercial facilities</span></div>
+      <div class="ind"><b>Industrial</b><span>Warehouses · Workshops</span><span>Factories &amp; industrial facilities</span></div>
+      <div class="ind"><b>Government</b><span>Office refurbishment</span><span>Specialised &amp; project-based works</span></div>
+      <div class="ind"><b>Sports</b><span>Gyms · Boxing facilities</span><span>Sports clubs &amp; training centres</span></div>
+      <div class="ind"><b>Events</b><span>Boxing events · Temporary structures</span><span>Installations &amp; event infrastructure</span></div>
+      <div class="ind"><b>Hospitality</b><span>Hotels · Restaurants</span><span>Cafés &amp; hospitality environments</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- D · PROCESS: nine stages on a turning drum -->
+<section class="process paper" id="process" aria-labelledby="procTitle">
+  <div class="process__pin" id="procPin">
+    <div class="wrap">
+      <div class="proc" id="proc">
+        <canvas class="proc__gl" id="procGL" aria-hidden="true"></canvas>
+        <i class="proc__dots proc__dots--a" aria-hidden="true"></i><i class="proc__dots proc__dots--b" aria-hidden="true"></i>
+        <div class="proc__top">
+          <p class="bubble mono"><b>D</b>How we work</p>
+          <div class="proc__head">
+            <h2 class="proc__title" id="procTitle">From requirement <span class="soft">to completion.</span></h2>
+            <p>A structured approach to project execution: clarity at every stage, from the initial enquiry through handover.</p>
+          </div>
+        </div>
+        <div class="pfeat" id="pfeat" aria-live="polite">
+          <span class="pfeat__obj" data-m="feat" id="pfeatObj" role="img" aria-label="3D model of the current stage. Drag to turn it."></span>
+          <span class="pfeat__spin mono" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11a7 3 0 0 0 14 0M15 9.5l2 1.5-2 1.6"/><path d="M10 3v5"/></svg>360°</span>
+          <div class="pfeat__card">
+            <div class="pfeat__txt" id="pfTxt">
+              <div class="pfeat__hd"><span class="pfeat__tag mono" id="pfTag">Understand</span><span class="pfeat__n" id="pfN">01</span></div>
+              <h3 id="pfTitle">Understanding your requirement</h3>
+              <p class="pfeat__sub" id="pfSub">Every project begins with what the client actually needs.</p>
+              <ul class="pfeat__list" id="pfList"><li>Client requirements</li><li>Project objectives</li><li>Drawings &amp; specifications</li><li>Scope of work</li><li>Site conditions</li><li>Timelines</li></ul>
+              <p class="pfeat__objt"><b class="mono">Objective</b><span id="pfObj">Establish a clear understanding of the project before committing to execution.</span></p>
+            </div>
+            <div class="pfeat__foot">
+              <div class="pfeat__nums" id="pfNums" role="group" aria-label="Choose a stage"><button type="button" data-i="0" aria-current="true">01</button><button type="button" data-i="1">02</button><button type="button" data-i="2">03</button><button type="button" data-i="3">04</button><button type="button" data-i="4">05</button><button type="button" data-i="5">06</button><button type="button" data-i="6">07</button><button type="button" data-i="7">08</button><button type="button" data-i="8">09</button></div>
+              <button class="pfeat__plus" type="button" id="procNext2" aria-label="Next stage"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="prow" id="prow">
+          <div class="prow__track" id="procTrack">
+            <article class="pcard" data-i="0" data-phase="Plan" style="--tint:#f3d6d2"><button class="pcard__sq" type="button" aria-label="Open stage 01: Understanding your requirement"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="0"></span></button><h3>Understanding your requirement</h3><span class="pcard__n">01</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Understand</span><span data-k="sub">Every project begins with what the client actually needs.</span><ul data-k="ul"><li>Client requirements</li><li>Project objectives</li><li>Drawings &amp; specifications</li><li>Scope of work</li><li>Site conditions</li><li>Timelines</li></ul><span data-k="obj">Establish a clear understanding of the project before committing to execution.</span></template></article>
+            <article class="pcard" data-i="1" data-phase="Plan" style="--tint:#eadfcd"><button class="pcard__sq" type="button" aria-label="Open stage 02: Site survey and assessment"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="1"></span></button><h3>Site survey &amp; assessment</h3><span class="pcard__n">02</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Site survey</span><span data-k="sub">Understand the site and its real working conditions.</span><ul data-k="ul"><li>Site measurements</li><li>Existing structure</li><li>Access conditions</li><li>Existing services</li><li>Working restrictions</li><li>Installation challenges</li></ul><span data-k="obj">Reduce surprises during execution by understanding the site before work begins.</span></template></article>
+            <article class="pcard" data-i="2" data-phase="Plan" style="--tint:#dce1e8"><button class="pcard__sq" type="button" aria-label="Open stage 03: Scope and proposal"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="2"></span></button><h3>Scope &amp; proposal</h3><span class="pcard__n">03</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Proposal</span><span data-k="sub">Build the right solution.</span><ul data-k="ul"><li>Scope of work</li><li>Material specifications</li><li>Quantities</li><li>Fabrication requirements</li><li>Exclusions</li><li>Estimated duration</li></ul><span data-k="obj">Create a clear understanding between Infinity Hub and the client before execution begins.</span></template></article>
+            <article class="pcard" data-i="3" data-phase="Prepare" style="--tint:#f3d6d2"><button class="pcard__sq" type="button" aria-label="Open stage 04: Planning and coordination"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="3"></span></button><h3>Planning &amp; coordination</h3><span class="pcard__n">04</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Planning</span><span data-k="sub">Prepare for execution.</span><ul data-k="ul"><li>Material procurement</li><li>Fabrication planning</li><li>Manpower</li><li>Equipment</li><li>Transportation</li><li>Installation sequence</li></ul><span data-k="obj">Make sure the required resources are available when they are needed.</span></template></article>
+            <article class="pcard" data-i="4" data-phase="Prepare" style="--tint:#eadfcd"><button class="pcard__sq" type="button" aria-label="Open stage 05: Fabrication and preparation"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="4"></span></button><h3>Fabrication &amp; preparation</h3><span class="pcard__n">05</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Fabrication</span><span data-k="sub">Built before it reaches the site.</span><ul data-k="ul"><li>Cutting</li><li>Welding</li><li>Assembly</li><li>Surface preparation</li><li>Painting / coating</li><li>Quality checks</li></ul><span data-k="obj">Maximise preparation before site installation and reduce unnecessary site delays.</span></template></article>
+            <article class="pcard" data-i="5" data-phase="Prepare" style="--tint:#dce1e8"><button class="pcard__sq" type="button" aria-label="Open stage 06: Site mobilisation"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="5"></span></button><h3>Site mobilisation</h3><span class="pcard__n">06</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Mobilisation</span><span data-k="sub">Ready for installation.</span><ul data-k="ul"><li>Materials</li><li>Manpower</li><li>Tools &amp; equipment</li><li>Access</li><li>Work areas</li><li>Safety requirements</li></ul><span data-k="obj">Ensure the site team is prepared to execute the planned scope.</span></template></article>
+            <article class="pcard" data-i="6" data-phase="Deliver" style="--tint:#f3d6d2"><button class="pcard__sq" type="button" aria-label="Open stage 07: Installation and execution"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="6"></span></button><h3>Installation &amp; execution</h3><span class="pcard__n">07</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Execution</span><span data-k="sub">Turning the plan into reality.</span><ul data-k="ul"><li>Structural erection</li><li>Welding</li><li>Interior fit-out</li><li>Panel installation</li><li>Shade installation</li><li>Finishing works</li></ul><span data-k="obj">Deliver the agreed scope with attention to workmanship, coordination and site conditions.</span></template></article>
+            <article class="pcard" data-i="7" data-phase="Deliver" style="--tint:#eadfcd"><button class="pcard__sq" type="button" aria-label="Open stage 08: Inspection and rectification"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="7"></span></button><h3>Inspection &amp; rectification</h3><span class="pcard__n">08</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Inspection</span><span data-k="sub">Check. Correct. Complete.</span><ul data-k="ul"><li>Deficiencies identified</li><li>Corrections carried out</li><li>Finishing completed</li><li>Outstanding items closed</li><li>Client observations</li></ul><span data-k="obj">Ensure the completed scope is ready for handover.</span></template></article>
+            <article class="pcard" data-i="8" data-phase="Deliver" style="--tint:#dce1e8"><button class="pcard__sq" type="button" aria-label="Open stage 09: Handover"><span class="pcard__plus" aria-hidden="true">+</span><span class="pcard__now mono" aria-hidden="true">Now viewing</span><span class="pcard__obj" data-m="8"></span></button><h3>Handover</h3><span class="pcard__n">09</span><span class="pcard__go mono">View stage <svg viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></span><template><span data-k="tag">Handover</span><span data-k="sub">Completion with clarity.</span><ul data-k="ul"><li>Final inspection</li><li>Completion confirmation</li><li>Handover documentation</li><li>Warranty information</li><li>Final commercial documents</li></ul><span data-k="obj">Close the project professionally.</span></template></article>
+          </div>
+        </div>
+        <div class="proc__bot">
+          <div class="proc__tabs" id="procTabs" role="group" aria-label="Phases"><button type="button" data-i="0" aria-pressed="true">Plan</button><button type="button" data-i="3" aria-pressed="false">Prepare</button><button type="button" data-i="6" aria-pressed="false">Deliver</button></div>
+          <div class="proc__nav">
+            <span class="mono" id="procCount">Stage 01 / 09</span>
+            <button type="button" id="procPrev" class="proc__back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M15 8H2M7 3 2 8l5 5"/></svg>Back</button>
+            <button type="button" id="procNext" class="proc__next">Next<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- E · PROJECTS: curved 3D gallery -->
+<section class="projects ink" id="projects" aria-labelledby="projTitle">
+  <div class="works" id="gallery">
+    <canvas id="galGL" role="img" aria-label="A corridor of 3D models of the work we build. Scroll to travel through it, click a model to see that capability."></canvas>
+    <div class="works__top wrap">
+      <p class="bubble mono"><b>E</b>Our work</p>
+      <h2 class="h2" id="projTitle">Steel, shades, interiors <span class="soft">and events.</span></h2>
+      <p class="works__note">Walk through what we build. Click a model to open that capability.</p>
+    </div>
+    <div class="works__cap" id="galCap" aria-hidden="true"><span class="mono" id="galCapN">01 / 14</span><b id="galCapT">Steel portal frame</b><span class="mono" id="galCapC">Steel &amp; fabrication · Click to view</span></div>
+    <div class="works__bot wrap">
+      <div class="filters" id="filters" role="group" aria-label="Filter models"></div>
+      <div class="works__meta mono"><span id="galCount">8 models</span><span class="works__bar" aria-hidden="true"><i id="galBar"></i></span><span>Scroll to travel · Click a model</span></div>
+    </div>
+  </div>
+  <ul class="sr" id="galList"></ul>
+</section>
+
+
+<!-- F · WHY -->
+<section class="why paper" id="why" aria-labelledby="whyTitle">
+  <div class="wrap">
+    <div class="whyx" id="whyx">
+      <div class="whyx__side">
+        <p class="bubble mono"><b>F</b>Why Infinity Hub</p>
+        <h2 class="whyx__title" id="whyTitle">More than a contractor. <span class="soft">A project execution partner.</span></h2>
+        <p class="whyx__lead">Eight reasons to work with one team from quotation to completion.</p>
+        <a class="hcta whyx__cta" href="#contact"><span class="hcta__ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></span><span>Book our services</span></a>
+        <div class="whyx__nav">
+          <button type="button" id="whyPrev" aria-label="Previous reason"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 8H2M7 3 2 8l5 5"/></svg></button>
+          <button type="button" id="whyNext" aria-label="Next reason"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button>
+          <span class="mono" id="whyCount" aria-live="polite">01 / 08</span>
+        </div>
+      </div>
+      <div class="whyx__stage">
+        <div class="whyx__bg" id="whyBg" aria-hidden="true"><img src="assets/img/w-01-b.webp" alt="" class=on loading="lazy"><img src="assets/img/w-02-b.webp" alt="" loading="lazy"><img src="assets/img/w-03-b.webp" alt="" loading="lazy"><img src="assets/img/w-04-b.webp" alt="" loading="lazy"><img src="assets/img/w-05-b.webp" alt="" loading="lazy"><img src="assets/img/w-06-b.webp" alt="" loading="lazy"><img src="assets/img/w-07-b.webp" alt="" loading="lazy"><img src="assets/img/w-08-b.webp" alt="" loading="lazy"></div>
+        <i class="whyx__dots" aria-hidden="true"></i>
+        <p class="whyx__note mono">Illustrative photos</p>
+        <div class="whyx__track" id="whyTrack" tabindex="0" role="region" aria-label="Eight reasons. Scroll sideways or use the arrows.">
+      <article class="wcard is-on" data-i="0"><img src="assets/img/w-01.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>01 · Coordination</span><i></i></div><div class="wcard__body"><h3>One contracting partner</h3><p>Multiple capabilities, one point of coordination: civil, fit-out, steel, fabrication, mezzanines, shades, panels and boxing rings.</p><p class="wcard__ben"><b class="mono">Client benefit</b>Less coordination between several small contractors when a project needs several scopes.</p></div></article>
+      <article class="wcard" data-i="1"><img src="assets/img/w-02.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>02 · Delivery</span><i></i></div><div class="wcard__body"><h3>Fabrication + installation</h3><p>One team carries the work from fabrication through delivery to installation on site.</p><p class="wcard__ben"><b class="mono">Client benefit</b>Fabrication and installation are coordinated as one process, not separate activities.</p></div></article>
+      <article class="wcard" data-i="2"><img src="assets/img/w-03.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>03 · Design</span><i></i></div><div class="wcard__body"><h3>Practical solutions</h3><p>Designed around site limitations, function, budget, materials, installation conditions and timelines.</p><p class="wcard__ben"><b class="mono">Client benefit</b>A solution built around the actual requirement rather than a standard product.</p></div></article>
+      <article class="wcard" data-i="3"><img src="assets/img/w-04.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>04 · Custom capability</span><i></i></div><div class="wcard__body"><h3>When standard solutions are not enough</h3><p>Steel structures, handrails, platforms, shades, pergolas, interior elements, boxing rings and project-specific fabrication.</p></div></article>
+      <article class="wcard" data-i="4"><img src="assets/img/w-05.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>05 · Planning</span><i></i></div><div class="wcard__body"><h3>Project-focused execution</h3><p>Materials, fabrication, labour, equipment, transport, access and sequence are planned before installation.</p><p class="wcard__ben"><b class="mono">Client benefit</b>Better preparation and fewer avoidable execution issues.</p></div></article>
+      <article class="wcard" data-i="5"><img src="assets/img/w-06.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>06 · Communication</span><i></i></div><div class="wcard__body"><h3>Clear communication</h3><p>Scope, pricing, materials, site requirements, progress, changes and completion are kept visible.</p><p class="wcard__ben"><b class="mono">Client benefit</b>Greater clarity and fewer misunderstandings during the project.</p></div></article>
+      <article class="wcard" data-i="6"><img src="assets/img/w-07.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>07 · UAE</span><i></i></div><div class="wcard__body"><h3>UAE-focused execution</h3><p>Local site conditions, UAE construction practices, authority requirements and local logistics are part of the plan.</p><p class="wcard__ben"><b class="mono">Client benefit</b>A contractor familiar with the practical realities of UAE projects.</p></div></article>
+      <article class="wcard" data-i="7"><img src="assets/img/w-08.webp" alt="" loading="lazy" width="620" height="861"><div class="wcard__top mono"><span>08 · Accountability</span><i></i></div><div class="wcard__body"><h3>Accountability</h3><p>We remain accountable for the scope we commit to deliver.</p><p class="wcard__ben"><b class="mono">From</b>Quotation → Coordination → Execution → Completion</p></div></article>
+          <div class="wend"><div class="wend__card"><span class="mono">Next step</span><h3>Tell us the scope.</h3><p>Share the site, the requirement and the timeline to start the conversation.</p><a class="btn btn--ink btn--sm" href="#contact">Book our services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qs" id="qs">
+      <div class="qs__head">
+        <p class="bubble mono">Quality &amp; safety</p>
+        <h3 class="h2 qs__title">Built with quality. <span class="soft">Executed with responsibility.</span></h3>
+      </div>
+      <div class="qs__body">
+        <figure class="qv" aria-hidden="true">
+          <svg viewBox="0 0 520 500" class="qv__svg" id="qvSvg">
+            <g class="qv__grid"><line x1="20" y1="276" x2="500" y2="276"/><line x1="260" y1="20" x2="260" y2="480"/></g>
+            <circle class="qv__c" data-i="0" cx="260" cy="196" r="138" pathLength="1"/><circle class="qv__c" data-i="1" cx="190" cy="316" r="138" pathLength="1"/><circle class="qv__c" data-i="2" cx="330" cy="316" r="138" pathLength="1"/><circle class="qv__dot" data-i="0" r="4.5"><animateMotion dur="16s" begin="0s" repeatCount="indefinite" path="M122,196 a138,138 0 1,1 276,0 a138,138 0 1,1 -276,0"/></circle><circle class="qv__dot" data-i="1" r="4.5"><animateMotion dur="21s" begin="-4s" repeatCount="indefinite" path="M52,316 a138,138 0 1,0 276,0 a138,138 0 1,0 -276,0"/></circle><circle class="qv__dot" data-i="2" r="4.5"><animateMotion dur="18s" begin="-8s" repeatCount="indefinite" path="M192,316 a138,138 0 1,1 276,0 a138,138 0 1,1 -276,0"/></circle>
+            <circle class="qv__core" cx="260" cy="276" r="6"/><circle class="qv__pulse" cx="260" cy="276" r="6"/>
+            <text class="qv__cl" x="260" y="304" text-anchor="middle">YOUR PROJECT</text>
+            <text class="qv__l" data-i="0" x="260" y="38" text-anchor="middle">01 · QUALITY</text><text class="qv__l" data-i="1" x="70" y="482" text-anchor="start">02 · SAFETY</text><text class="qv__l" data-i="2" x="450" y="482" text-anchor="end">03 · COMMUNICATION</text>
+          </svg>
+        </figure>
+        <div class="qs__side">
+          <ul class="qs__list" id="trioList"><li data-i="0" class="on"><span class="mono">01</span><div><b>Quality</b><p>Do the work properly: clear scope, the right materials, accurate workmanship and fabrication control.</p></div><i aria-hidden="true"></i></li><li data-i="1"><span class="mono">02</span><div><b>Safety</b><p>Do the work responsibly. Safety is part of the work, not an afterthought.</p></div><i aria-hidden="true"></i></li><li data-i="2"><span class="mono">03</span><div><b>Communication</b><p>Keep everyone informed from quotation to completion.</p></div><i aria-hidden="true"></i></li></ul>
+          <blockquote class="qs__commit"><span class="mono">Our commitment</span><p>We aim to deliver work that is practical, durable and professionally executed, while maintaining responsible safety and quality practices throughout the project.</p></blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- G · CONTACT -->
+<section class="contact ink" id="contact" aria-labelledby="contactTitle">
+  <div class="contact__bg" aria-hidden="true"><video muted loop playsinline preload="none" data-auto poster="assets/img/poster-skyline.webp"><source src="assets/video/skyline.mp4" type="video/mp4"><source src="assets/video/skyline.webm" type="video/webm"></video></div>
+  <div class="wrap">
+    <div class="sheet-head">
+      <p class="bubble mono"><b>G</b>Book our services</p>
+      <h2 class="h2" id="contactTitle">Tell us what you need built. <span class="soft">We'll take it from requirement to handover.</span></h2>
+    </div>
+    <div class="contact__grid">
+      <div>
+        <div class="mark3d" id="markWrap"><canvas id="markGL" aria-hidden="true"></canvas></div>
+        <dl class="reach">
+          <div><dt class="mono">Office</dt><dd><a href="tel:+97143449282">+971 4 344 9282</a></dd><button class="copy" type="button" data-copy="+971 4 344 9282">Copy</button></div>
+          <div><dt class="mono">Mobile</dt><dd><a href="tel:+971522458325">+971 52 245 8325</a></dd><button class="copy" type="button" data-copy="+971 52 245 8325">Copy</button></div>
+          <div><dt class="mono">Email</dt><dd><a href="mailto:Info@infinityhubcontracting.com">Info@infinityhubcontracting.com</a></dd><button class="copy" type="button" data-copy="Info@infinityhubcontracting.com">Copy</button></div>
+          <div><dt class="mono">Office address</dt><dd>1002 DNI Building, Port Saeed, Deira, Dubai</dd><button class="copy" type="button" data-copy="1002 DNI Building, Port Saeed, Deira, Dubai">Copy</button></div>
+          <div><dt class="mono">Web</dt><dd><a href="https://www.infinityhubcontracting.com" target="_blank" rel="noopener">www.infinityhubcontracting.com</a></dd></div>
+        </dl>
+      </div>
+      <form class="form" id="form" novalidate>
+        <h3>Project enquiry</h3>
+        <div class="fgrid">
+          <div class="field"><label for="fName">Name</label><input id="fName" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+          <div class="field"><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" required><span class="err" aria-live="polite"></span></div>
+          <div class="field full"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></div>
+          <fieldset class="field full" style="border:0;padding:0;margin:0"><legend class="mono" style="font-size:.7rem;letter-spacing:.08em;color:var(--mute-paper);margin-bottom:6px">Scope (choose any)</legend>
+            <div class="svc-pick" id="svcPick"></div>
+          </fieldset>
+          <div class="field full"><label for="fMsg">Requirement</label><textarea id="fMsg" name="message" placeholder="Location, size, timeline, drawings available…" required></textarea><span class="err" aria-live="polite"></span></div>
+        </div>
+        <button class="btn btn--ink" type="submit">Prepare enquiry <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button>
+        <p class="form__note">This prepares your enquiry for you to send by email or copy. Nothing is sent from this page.</p>
+        <div class="ready" id="ready" hidden>
+          <span class="mono">Your enquiry is ready</span>
+          <pre id="readyTxt"></pre>
+          <div class="row"><button class="btn btn--sm btn--ink" type="button" id="copyEnq">Copy enquiry</button><a class="btn btn--sm btn--ghost" id="mailEnq" href="#">Open in email app</a></div>
+          <p class="form__note">If your email app does not open, copy the enquiry and send it to Info@infinityhubcontracting.com.</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="titleblock mono">
+      <div><img src="assets/brand/full-rev.svg" alt="Infinity Hub Contracting LLC, Shaping Tomorrow's Landmark" width="160" height="100"></div>
+      <div><span>Client</span><b>You</b></div>
+      <div><span>Drawing</span><b>Company website</b></div>
+      <div><span>Scale</span><b>NTS</b></div>
+      <div><span>Sheet</span><b>G / G</b></div>
+    </div>
+  </div>
+  <footer class="wrap foot mono">
+    <span>© 2026 Infinity Hub Contracting LLC · Dubai, UAE</span>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#process">Process</a><a href="#projects">Our work</a><a href="#why">Why us</a><a href="#top">Back to top ↑</a></nav>
+  </footer>
+</section>
+
+</main>

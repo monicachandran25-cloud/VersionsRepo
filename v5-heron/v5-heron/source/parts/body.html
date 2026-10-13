@@ -1,0 +1,232 @@
+<a class="skip" href="#main">Skip to content</a>
+<div class="frame" aria-hidden="true"></div>
+<canvas class="gl-layer" id="gl" aria-hidden="true"></canvas>
+
+<!-- Loader: the elevation is plotted line by line, then shaded -->
+<div class="boot" id="boot" aria-hidden="true">
+  <canvas class="boot__gl" id="bootGL"></canvas>
+  <div class="boot__top"><span class="boot__pct" id="bootPct">0<i>%</i></span><span class="boot__now mono" id="bootNow">001 Understand requirement</span></div>
+  <p class="boot__title cap">Shaping tomorrow's landmark</p>
+  <div class="boot__data mono">
+    <span class="h">Welcome to Infinity Hub</span>
+    <dl>
+      <dt>Type</dt><dd>Construction &amp; contracting company</dd>
+      <dt>Based</dt><dd>Dubai, UAE</dd>
+      <dt>Focus</dt><dd>Civil works, fit-out, structural steel, shades, sandwich panels (UAE projects)</dd>
+      <dt>Office</dt><dd>1002 DNI Building, Port Saeed, Deira, Dubai</dd>
+    </dl>
+  </div>
+  <ol class="boot__list mono" id="bootList">
+    <li>001 Understand requirement</li>
+    <li>002 Site survey &amp; assessment</li>
+    <li>003 Scope &amp; proposal</li>
+    <li>004 Planning &amp; coordination</li>
+    <li>005 Fabrication &amp; preparation</li>
+    <li>006 Site mobilisation</li>
+    <li>007 Installation &amp; execution</li>
+    <li>008 Inspection &amp; rectification</li>
+    <li>009 Handover</li>
+    <li>010 Ready</li>
+  </ol>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="Infinity Hub Contracting LLC, back to top"><img class="m" src="assets/brand/mark-ink.svg" alt="" width="70" height="30"><img class="w" src="assets/brand/word-ink.svg" alt="Infinity Hub Contracting LLC" width="144" height="28"></a>
+  <div class="nav__cell l" tabindex="-1" data-sec="capabilities"><a class="mono" href="#capabilities">Capabilities</a><i class="corner" aria-hidden="true"></i>
+    <div class="drop mono" id="capDrop"></div>
+  </div>
+  <a class="nav__cell l mono" href="#process" data-sec="process">Process</a>
+  <a class="nav__cell l mono" href="#projects" data-sec="projects">Projects</a>
+  <a class="nav__cell l mono" href="#about" data-sec="about">About</a>
+  <button class="nav__cell nav__menu mono" id="menuBtn" type="button" aria-expanded="false">Menu<i class="corner" aria-hidden="true"></i></button>
+  <button class="nav__cell nav__cell--red mono" type="button" data-contact>Contact us<svg class="arrow" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></button>
+</header>
+
+<main class="sheet" id="main">
+
+<!-- HERO -->
+<section class="hero row" id="top" aria-labelledby="h1">
+  <div class="hero__draw ruler cell">
+    <i class="ry l"></i><i class="ry r"></i><i class="x tl"></i><i class="x tr"></i><i class="x bl"></i><i class="x br"></i>
+    <div data-view="hero" id="vHero" role="img" aria-label="Elevation of a two-storey building with a steel pergola and a parking shade, drawn in pen and stipple. Move the pointer to turn the model."></div>
+    <p class="hero__hint mono">[ Move to turn the model ]</p>
+    <div id="heroMarks"></div>
+  </div>
+  <div class="hero__low">
+    <h1 class="hero__h1 cap" id="h1">Shaping tomorrow's<br>landmark</h1>
+    <p class="hero__desc">Construction, contracting, steel, fit-out and shade solutions across the UAE. One company that understands the requirement, coordinates the resources and delivers the agreed scope. <b>Infinity Hub Contracting LLC</b>, Dubai.</p>
+    <a class="hero__more mono" href="#about">Discover more<svg class="arrow" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></a>
+    <div class="ticker mono" aria-label="Core capabilities"><div class="ticker__run" id="ticker"></div></div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="split row" id="about" aria-labelledby="stTitle">
+  <div class="split__art cell" id="stArt">
+    <img class="line" src="assets/img/shade-canopy-line.webp" alt="" width="1800" height="893">
+    <img class="eng" id="stEng" src="assets/img/shade-canopy.webp" alt="Tensile shade canopy over a paved walkway" width="1800" height="893">
+    <i class="sun" id="stSun" aria-hidden="true"></i>
+  </div>
+  <div class="split__text">
+    <div class="statement">
+      <h2 class="sr" id="stTitle">About Infinity Hub</h2>
+      <p class="cap" id="stWords">Choosing the right contractor is about more than comparing quotations. It is about finding a company that understands the requirement and takes responsibility for the agreed scope.</p>
+      <a class="bx mono" href="#capabilities"><span>Learn more</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h13M9 3l5 5-5 5"/></svg></i></a>
+    </div>
+    <div class="ind" aria-labelledby="indT">
+      <div class="ind__head"><span class="mono" id="indT">Industries we serve</span><div class="ind__arrows"><button type="button" id="indPrev" aria-label="Previous industries"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 8H2M7 3 2 8l5 5"/></svg></button><button type="button" id="indNext" aria-label="Next industries"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h13M9 3l5 5-5 5"/></svg></button></div></div>
+      <div class="ind__track"><div class="ind__row" id="indRow"></div></div>
+      <p class="ind__note mono">Infinity Hub operates from Dubai and focuses primarily on UAE projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<!-- SHADE CONFIGURATOR -->
+<section class="cfg row" id="configure" aria-labelledby="cfgTitle">
+  <div class="lead">
+    <p class="mono">Configure · Car parking &amp; building shades</p>
+    <h2 class="cap" id="cfgTitle">Plan your shade.<br>Watch it in the sun.</h2>
+    <p>We design, fabricate and install durable shade structures for residential, commercial, industrial and public spaces. Pick a structure, size and colours, then move the sun across a day in Dubai.</p>
+  </div>
+  <div class="cfg__grid">
+    <div class="cfg__stage">
+      <div class="cfg__view" data-view="cfg" role="img" aria-label="3D model of the shade structure you configured, with its shadow" id="cfgView"></div>
+      <div class="cfg__tags" id="cfgTags" aria-hidden="true"></div>
+      <span class="chip mono cfg__hint"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h14M4 5 1 8l3 3M12 5l3 3-3 3"/></svg>Drag to turn</span>
+      <span class="chip chip--dark mono cfg__sun" id="cfgSun">Sun 10:30</span>
+      <div class="cfg__key mono"><i></i>Shadow at this time<i class="d"></i>Sun path</div>
+    </div>
+    <div class="cfg__panel">
+      <div class="cfg__g"><div class="cfg__l mono">01 · Structure</div><div class="seg seg--3" id="cfgType" role="radiogroup" aria-label="Structure"></div></div>
+      <div class="cfg__g cfg__two">
+        <div><div class="cfg__l mono" id="cfgUnit">Bays</div><div class="step"><button type="button" data-d="-1" aria-label="Fewer">−</button><output id="cfgN" aria-live="polite">3</output><button type="button" data-d="1" aria-label="More">+</button></div><p class="cfg__per mono" id="cfgPer"></p></div>
+        <div><div class="cfg__l mono">Long side runs</div><div class="seg" id="cfgOri" role="radiogroup" aria-label="Orientation"><button type="button" role="radio" data-o="ew">East – West</button><button type="button" role="radio" data-o="ns">North – South</button></div></div>
+      </div>
+      <div class="cfg__g"><div class="cfg__l mono">02 · Frame finish <b id="cfgFrameN"></b></div><div class="sws" id="cfgFrame" role="radiogroup" aria-label="Frame finish"></div></div>
+      <div class="cfg__g"><div class="cfg__l mono"><span id="cfgSkinL">Canopy fabric</span> <b id="cfgSkinN"></b></div><div class="sws" id="cfgSkin" role="radiogroup" aria-label="Canopy colour"></div></div>
+      <div class="cfg__g">
+        <div class="cfg__l mono">03 · Sun over Dubai <b id="cfgTime">10:30</b></div>
+        <div class="seg seg--3 seg--sm" id="cfgSeason" role="radiogroup" aria-label="Season"></div>
+        <div class="sunr"><button type="button" class="sun__play" id="cfgPlay" aria-label="Play the day"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg></button><input type="range" id="cfgT" min="6" max="18" step="0.25" value="10.5" aria-label="Time of day"></div>
+        <div class="sun__ticks mono"><span>06:00</span><span>12:00</span><span>18:00</span></div>
+      </div>
+      <div class="cfg__out">
+        <div><span class="mono">Covered area</span><b id="cfgArea">15.0 × 5.5 m</b><em class="mono" id="cfgM2"></em></div>
+        <div><span class="mono">Footprint in shade now</span><b id="cfgShade">0%</b><svg class="spark" id="cfgSpark" viewBox="0 0 120 34" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+      </div>
+      <p class="cfg__sum" id="cfgSum"></p>
+      <div class="cfg__cta"><button class="bx bx--red mono" type="button" id="cfgGo"><span>Enquire about this setup</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h13M9 3l5 5-5 5"/></svg></i></button><p class="mono">Indicative sizes and shade for early planning. Final design follows a site survey.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PINNED: words, then the plan assembles -->
+<section class="row ruler" id="pin" aria-label="Introduction">
+  <div class="pin" id="pinIn">
+    <i class="ry l"></i><i class="ry r"></i><i class="x tl"></i><i class="x tr"></i><i class="x bl"></i><i class="x br"></i>
+    <h2 class="pin__word cap" id="w1"><span>One contracting partner</span></h2>
+    <h2 class="pin__word cap" id="w2" aria-hidden="true"><span>For the whole project</span></h2>
+    <div class="plan" id="plan"></div>
+    <div class="pop" id="pop" role="dialog" aria-live="polite"><div class="pop__h mono"><span id="popK">Stage</span><button type="button" id="popX" aria-label="Close">✕</button></div><div class="pop__b"><span class="mono red" id="popN"></span><h4 id="popT"></h4><ul id="popL"></ul><div class="pop__fix"><b>Objective</b><span id="popO"></span></div></div></div>
+    <div class="intro" id="intro">
+      <div class="intro__h mono">Introduction</div>
+      <p class="intro__t" id="introT">Choosing the right contractor is about more than comparing quotations.</p>
+      <p class="intro__c mono" id="introC">[Scroll to continue]</p>
+      <div class="intro__bar"><i id="introBar"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES LIST -->
+<section class="caps row" id="capabilities" aria-labelledby="clTitle">
+  <div class="caps__stage" id="capsStage">
+    <div class="caps__view" data-view="caps" role="img" aria-label="3D model of the selected capability" id="capsView"></div>
+    <span class="chip mono caps__hint"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 8h14M4 5 1 8l3 3M12 5l3 3-3 3"/></svg>Drag to turn</span>
+    <span class="chip chip--dark mono caps__name" id="capsName"></span>
+    <div class="sizes" id="capsSizes" role="group" aria-label="Ring size" hidden><button type="button" data-size="5" aria-pressed="false">5×5 m</button><button type="button" data-size="6" aria-pressed="true">6×6 m</button><button type="button" data-size="7" aria-pressed="false">7×7 m</button></div>
+  </div>
+  <div class="caps__side">
+    <div class="caps__intro"><p class="mono">Our core capabilities</p><h2 class="cap" id="clTitle">Multiple capabilities.<br>One point of coordination.</h2></div>
+    <ul class="caps__list" id="capsList"></ul>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="proc row" id="process" aria-labelledby="pcTitle">
+  <div class="lead">
+    <p class="mono">How we work</p>
+    <h2 class="cap" id="pcTitle">From requirement<br>to completion</h2>
+    <p>A structured approach to project execution, with clarity at every stage from the initial enquiry to handover.</p>
+  </div>
+  <div class="proc__pin row" id="procPin" style="border-top:1px solid var(--line)">
+    <div class="half ruler" id="procL"><i class="ry l"></i><i class="x tl"></i><i class="x bl"></i></div>
+    <div class="half" id="procR"></div>
+    <i class="proc__line" aria-hidden="true"></i>
+    <div class="stepbar" id="stepbar"><b id="sbT">Understand</b><span id="sbS">We start with what the client actually needs</span><i aria-hidden="true"></i></div>
+    <p class="proc__count mono" id="procCount">01 / 04</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="uc row" id="projects" aria-labelledby="ucTitle">
+  <div class="uc__art cell"><div class="uc__media" id="ucMedia"></div><i class="sun a" aria-hidden="true"></i><i class="blk" aria-hidden="true"></i><i class="sun b" aria-hidden="true"></i></div>
+  <div class="uc__side">
+    <div class="uc__intro"><p class="mono">Our work</p><h2 class="cap" id="ucTitle">From the workshop<br>to the finished<br>site</h2></div>
+    <div class="acc" id="acc"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="row" id="contact" aria-labelledby="ctaTitle">
+  <div class="cta">
+    <div><span class="coord mono" style="left:10px;top:30px">[0,240]</span><span class="coord mono" style="left:10px;bottom:20px">[0,544]</span></div>
+    <div class="cta__mid"><div><h2 class="cap" id="ctaTitle">See what we can build for you</h2><p>Book our services and tell us about the requirement. We'll take it from site survey to handover.</p><button class="bx bx--red mono" type="button" data-contact><span>Contact us</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h13M9 3l5 5-5 5"/></svg></i></button></div></div>
+    <div><span class="coord mono" style="left:10px;top:30px">[1440,240]</span><span class="coord mono" style="right:10px;bottom:20px">[1440,544]</span></div>
+    <div class="cta__art"><div></div><div><img src="assets/img/commercial.webp" alt="Contemporary commercial building with a landscaped forecourt" loading="lazy" width="1800" height="893"><i class="sun" aria-hidden="true"></i></div><div></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot row">
+    <div><h4>Shaping<br>tomorrow's<br>landmark</h4></div>
+    <div><span class="mono">Company</span><ul><li><a href="#top" class="red">Home</a></li><li><a href="#about">About</a></li><li><button type="button" data-contact>Contact us</button></li></ul></div>
+    <div><span class="mono">Capabilities</span><ul><li><a href="#cap-steel">Structural steel</a></li><li><a href="#configure">Parking shades</a></li><li><a href="#cap-fitout">Fit-out</a></li></ul></div>
+    <div><span class="mono">Explore</span><ul><li><a href="#process">How we work</a></li><li><a href="#projects">Projects</a></li><li><a href="#capabilities">All capabilities</a></li></ul></div>
+    <div class="logo"><img src="assets/brand/mark-ink.svg" alt="" width="200" height="86"></div>
+  </div>
+  <div class="foot2 row">
+    <div><span class="mono">Book our services</span><span>+971 4 344 9282</span><span>+971 52 245 8325</span></div>
+    <div><span class="mono">Office</span><span>1002 DNI Building,<br>Port Saeed, Deira, Dubai</span></div>
+    <div><span class="mono">Email</span><span>Info@infinityhubcontracting.com</span><button class="copyb" type="button" data-copy="Info@infinityhubcontracting.com">Copy email</button></div>
+    <div><span class="mono">Web</span><a href="https://www.infinityhubcontracting.com" target="_blank" rel="noopener">www.infinityhubcontracting.com</a></div>
+  </div>
+  <div class="word ruler row"><i class="ry l"></i><i class="ry r"></i><i class="x tl"></i><i class="x tr"></i><i class="x bl"></i><i class="x br"></i><svg id="wordSvg" viewBox="0 0 1000 150" role="img" aria-label="Infinity Hub"></svg></div>
+  <div class="legal mono"><span>© 2026 Infinity Hub Contracting LLC. All rights reserved.</span><span>Dubai, UAE</span></div>
+</footer>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Contact us" aria-hidden="true">
+  <div class="drawer__h"><span class="mono">Book our services</span><button type="button" id="drawerX" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
+  <div class="drawer__b">
+    <h3 class="cap">Tell us what you need built</h3>
+    <dl class="reach mono">
+      <div><dt>Office</dt><dd>+971 4 344 9282</dd><button class="copyb" type="button" data-copy="+971 4 344 9282">Copy</button></div>
+      <div><dt>Mobile</dt><dd>+971 52 245 8325</dd><button class="copyb" type="button" data-copy="+971 52 245 8325">Copy</button></div>
+      <div><dt>Email</dt><dd>Info@infinityhubcontracting.com</dd><button class="copyb" type="button" data-copy="Info@infinityhubcontracting.com">Copy</button></div>
+      <div><dt>Address</dt><dd>1002 DNI Building, Port Saeed, Deira, Dubai</dd><span></span></div>
+    </dl>
+    <form class="f" id="form" novalidate>
+      <div class="two"><div class="fld"><label for="fN">Name</label><input id="fN" name="name" autocomplete="name"><span class="err"></span></div><div class="fld"><label for="fP">Phone</label><input id="fP" name="phone" type="tel" autocomplete="tel"><span class="err"></span></div></div>
+      <div class="fld"><label for="fE">Email</label><input id="fE" name="email" type="email" autocomplete="email"><span class="err"></span></div>
+      <div class="fld"><label for="fS">Scope</label><select id="fS" name="scope"></select></div>
+      <div class="fld"><label for="fM">Requirement</label><textarea id="fM" name="message" placeholder="Location, size, timeline, drawings available…"></textarea><span class="err"></span></div>
+      <button class="bx bx--red mono" type="submit" style="justify-self:start"><span>Prepare enquiry</span><i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 8h13M9 3l5 5-5 5"/></svg></i></button>
+      <p class="note">This prepares your enquiry to send by email or copy. Nothing is sent from this page.</p>
+      <div class="ready" id="ready" hidden><div class="h mono">Enquiry ready</div><pre id="readyT"></pre><div class="r"><button class="bx mono" type="button" id="copyEnq"><span>Copy enquiry</span></button><a class="bx mono" id="mailEnq" href="#"><span>Open email app</span></a></div></div>
+    </form>
+  </div>
+</aside>
+
+</div>
