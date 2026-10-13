@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/v5-heron/:match*", "destination": "/v5-heron/:match*" },
-    { "source": "/v5-heron", "destination": "/v5-heron/index.html" },
-    { "source": "/:match*", "destination": "/v4-3d/:match*" },
-    { "source": "/", "destination": "/v4-3d/index.html" }
-  ]
+  "cleanUrls": true
 }
